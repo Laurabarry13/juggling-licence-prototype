@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/url/of/previous/page">Back</a>
+
+      <form class="form" action="/check-your-answers-page" method="post">
+        <div class="form-group">
+          <fieldset class="inline">
+
+            <legend>
+              <h1 class="heading-medium">
+                Do you require public liability insurance?
+              </h1>
+            </legend>
+
+            <div class="multiple-choice">
+              <input id="radio-inline-1" type="radio" name="public-liability-ins" value="Yes">
+              <label for="radio-inline-1">Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-2" type="radio" name="public-liability-ins" value="No">
+              <label for="radio-inline-2">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+      </form>
+
+     <!-- <form class="form" action="/check-your-answers-page" method="post">
+          <div class="form-group">
+              <label class="form-label" for="textarea">
+
+                <h1 class="heading-large">Will you also require public liability insurance?
+                </h1>
+              </label>
+              <textarea class="form-control form-control-3-4" name="public-liability-ins" id="textarea" rows="5">{{ data['public-liability-ins'] }}</textarea>
+          </div>
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form> -->
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
