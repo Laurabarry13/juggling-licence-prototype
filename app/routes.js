@@ -39,7 +39,7 @@ router.post('/public-liability-ins', function (req, res) {
 
   } else {
     // Send user to ineligible page
-    res.redirect('/check-your-answers')
+    res.redirect('/public-liability-ins')
   }
 
 })
